@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Clean up Word HTML</title>
+  </head>
+  <body>
+    <h1>Clean up Word HTML</h1>
+    <p>Paste here.</p>
+    <form>
+      <textarea id="cleaning" cols="80" rows="30"></textarea>
+      <input type="button" id="cleanWord" value="Clean Word HTML script" onclick="CleanWordHTML(document.getElementById('cleaning').value)"><br>
+      <input type="button" id="cleanPaste" value="Clean Paste script" onclick="cleanPaste(document.getElementById('cleaning').value)">
+    <script src="MSWordHtmlCleaners.js"></script>
+  </body>
+</html>
