@@ -45,6 +45,7 @@ str = str.replace( re, "<div$2</div>" ) ;
 var re2 = new RegExp("(<font|<FONT)([^*>]*>.*?)(<\/FONT>|<\/font>)","gi") ; 
 str = str.replace( re2, "<div$2</div>") ;
 str = str.replace( /size|SIZE = ([\d]{1})/g, '' ) ;
+    console.log(str);
 return str ;
 cleaningArea = str;
 }
