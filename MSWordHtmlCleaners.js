@@ -1,3 +1,4 @@
+var cleaningArea = document.getElementById('cleaning').value;
 var CleanWordHTML = function ( str )
 {
 str = str.replace(/<o:p>\s*<\/o:p>/g, "") ;
@@ -45,6 +46,7 @@ var re2 = new RegExp("(<font|<FONT)([^*>]*>.*?)(<\/FONT>|<\/font>)","gi") ;
 str = str.replace( re2, "<div$2</div>") ;
 str = str.replace( /size|SIZE = ([\d]{1})/g, '' ) ;
 return str ;
+cleaningArea = str;
 }
 
 
@@ -61,6 +63,7 @@ var cleanPaste = function(html) {
     html = html.replace(/<!--(.*?)-->/gi, '');        // HTML comments
     
     return html;
+    cleaningArea = html;
 }
 
 // tip  #1, curl-based : curl -d html=<Dirty HTML> http://wordoff.org/api/clean
