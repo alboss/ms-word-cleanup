@@ -83,6 +83,8 @@ function cleanHTML(input) {
         var attributeStripper = new RegExp(' ' + badAttributes[i] + '="(.*?)"','gi');
         output = output.replace(attributeStripper, '');
     }
+    console.log(output);
+    cleaningArea = output;
     return output;
 }
 
