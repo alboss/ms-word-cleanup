@@ -57,6 +57,7 @@ cleaningArea = str;
 }
 
 function cleanHTML(input) {
+    console.log(input);
     // 1. remove line breaks / Mso classes
     var stringStripper = /(\n|\r| class=(")?Mso[a-zA-Z]+(")? ^p)/g;
     var output = input.replace(stringStripper, ' ');
@@ -84,7 +85,7 @@ function cleanHTML(input) {
         output = output.replace(attributeStripper, '');
     }
     console.log(output);
-    cleaningArea = output;
+    //cleaningArea = output;
     return output;
 }
 
