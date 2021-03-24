@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clean up Word HTML</title>
+  </head>
+  <body>
+    <h1>Clean up Word HTML</h1>
+    <p>Paste here.</p>
+    <form>
+      <textarea id="cleaning" cols="80" rows="30"></textarea>
+      <p>
+        <input type="button" id="cleanWord" value="Clean Word HTML script" onclick="CleanWordHTML(document.getElementById('cleaning').value)">
+      </p>
+      <p>
+        <input type="button" id="cleanHTMLbutton" value="Clean HTML script" onclick="cleanHTML(document.getElementById('cleaning').value)">
+      </p>
+      <p>
+        This page used various experiments from the <em>MSWordHtmlCleaners.js</em> script in this repo.
+      </p>
+    <script src="MSWordHtmlCleaners.js"></script>
+  </body>
+</html>
