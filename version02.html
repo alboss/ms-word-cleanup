@@ -4,7 +4,7 @@ layout: default
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Clean up Word HTML - another approach</title>
+    <title>Clean up Word HTML - Vue and jQuery</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sanitize-html@1.18.2/dist/sanitize-html.min.js"></script>
@@ -12,6 +12,7 @@ layout: default
   </head>
   <body>
     <h1>Clean up Word HTML</h1>
+    <h2>Dependencies: Vue, jQuery</h2>
     <div id="app">
   <div class="input-area">
     <textarea v-model="input"
@@ -40,7 +41,8 @@ layout: default
     </div>
   </div>
 </div>
-        
+
+    <p>Adapted from work by Jörg Bayreuther, https://codepen.io/mediadivisiongmbh, code at https://codepen.io/mediadivisiongmbh/pen/ERxywZ</p>
     <script src="MSWordHtmlCleaners02.js"></script>
   </body>
 </html>
