@@ -1,3 +1,7 @@
+body { 
+  padding: 20px;
+  margin: auto;
+}
 $border: #cccccc;
 $selectColor: #efefef;
 $toolbarHeight: 60px;
