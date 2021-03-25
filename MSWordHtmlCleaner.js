@@ -65,7 +65,8 @@ new Vue({
         .replace(/<p>(\s)*(<br \/>)+/g, '<p>')
         // use html5 <br> instead of xhtml <br />
         .replace(/<br\s*\/?>/ig, '<br>')
-        .replace(/<b>/ig, '<em>');
+        // <br /><br /> -> </p><p>
+        .replace(/<b>(.*?)<\/b>/g, '<strong>$1</strong>');
       ;
       // delete empty tags
       deleteEmptyTags.forEach(tag => {
