@@ -5,12 +5,8 @@ layout: default
 <html>
   <head>
     <title>Clean up Word HTML - Vue and jQuery</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sanitize-html@1.18.2/dist/sanitize-html.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
     <link rel="stylesheet" href="version02.css">
-        
   </head>
   <body>
     <h1>Clean up Word HTML</h1>
@@ -36,6 +32,7 @@ layout: default
            Click on element to convert it to selected tag.
          </span>
       </div>
+      <h2>Preview</h2>
       <div ref="preview"
            class="preview"
            v-html="input"
@@ -45,6 +42,9 @@ layout: default
 </div>
 
     <p>Adapted from work by Jörg Bayreuther, https://codepen.io/mediadivisiongmbh, code at https://codepen.io/mediadivisiongmbh/pen/ERxywZ</p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sanitize-html@1.18.2/dist/sanitize-html.min.js"></script>    
     <script src="MSWordHtmlCleaners02.js"></script>
   </body>
 </html>
