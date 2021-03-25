@@ -9,7 +9,7 @@ const deleteEmptyTags = [ 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'blockquote', 'p',
   'nl', 'li', 'b', 'i', 'strong', 'em', 'strike', 'code', 'hr', 'div',
   'table', 'thead', 'caption', 'tbody', 'pre' ];
 
-const blockSelectTags = [ 'h1', 'h2', 'h3', 'h4', 'h5', 'p' ];
+const blockSelectTags = [ 'h1', 'h2', 'h3', 'h4', 'h5', 'p', 'li' ];
 
 new Vue({
   el: '#app',
