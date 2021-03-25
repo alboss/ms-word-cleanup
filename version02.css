@@ -1,60 +1,44 @@
-body { 
-  padding: 20px;
-  margin: auto;
-}
-$border: #cccccc;
-$selectColor: #efefef;
-$toolbarHeight: 60px;
-
 .input-area {
   display: flex;
-  
-  .text-area {
-    flex: 0 0 50%;
-    min-height: 80vh;
-    padding: 20px;
-    border: 1px solid $border;
-  }
-  
-  .editor {
-    flex: 0 0 50%;
-    border: 1px solid $border;
-    border-left: 0;
-  }
-  
-  .controls {
-    display: flex;
-    height: $toolbarHeight;
-    border-bottom: 1px solid $border;
-    padding: 0 20px;
-    align-items: center;
-    font-size: 14px;
-    position:fixed;
-    right: 0;
-    top: 0;
-    left: 50%;
-    background: #fff;
-    
-    label {
-      margin-right: 5px;
-      margin-bottom: 0;
-    }
-    
-    .form-control {
-      width: 100px;
-    }
-    
-    .description {
-      margin-left: 10px;
-    }
-  }
-  
-  .preview {
-    margin-top: $toolbarHeight;
-    padding: 20px;
-    
-    & > *:hover {
-      background-color: $selectColor;
-    }
-  }
+}
+.input-area .text-area {
+  flex: 0 0 50%;
+  min-height: 80vh;
+  padding: 20px;
+  border: 1px solid #cccccc;
+}
+.input-area .editor {
+  flex: 0 0 50%;
+  border: 1px solid #cccccc;
+  border-left: 0;
+}
+.input-area .controls {
+  display: flex;
+  height: 60px;
+  border-bottom: 1px solid #cccccc;
+  padding: 0 20px;
+  align-items: center;
+  font-size: 14px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 50%;
+  background: #fff;
+}
+.input-area .controls label {
+  margin-right: 5px;
+  margin-bottom: 0;
+}
+.input-area .controls .form-control {
+  width: 100px;
+}
+.input-area .controls .description {
+  margin-left: 10px;
+}
+.input-area .preview {
+  margin-top: 60px;
+  padding: 20px;
+}
+.input-area .preview > *:hover {
+  background-color: #efefef;
 }
