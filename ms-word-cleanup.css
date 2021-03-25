@@ -1,3 +1,7 @@
+body {
+  padding: 20px;
+  margin: auto;
+}
 .input-area {
   display: flex;
 }
